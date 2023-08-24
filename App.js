@@ -1,12 +1,14 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, SafeAreaView, ScrollView } from 'react-native';
+import Uitslagen from './components/Uitslagen';
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={{ color: '#ef7900', fontSize: 20 }}>Korfkaas Ereklasse veldseizoen 2023/2024</Text>
-      <View style={{ flexDirection: "row", margin: 0 }}>
+      <Text style={{ color: '#ef7900', fontSize: 20 }}>Korfbal Ereklasse veldseizoen 2023/2024</Text>
+      <Uitslagen />
+      {/* <View style={{ flexDirection: "row", margin: 0 }}>
         <View>
           <View style={styles.poule}>
             <Text>EK-01</Text>
@@ -82,7 +84,7 @@ export default function App() {
             </Text>
           </View>
         </View>
-      </View>
+      </View> */}
       <StatusBar style="auto" />
     </SafeAreaView>
   );
@@ -94,6 +96,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'darkblue',
     alignItems: 'center',
     justifyContent: 'center',
+    marginTop: 25
   },
   poule: {
     margin: 0,
