@@ -5,7 +5,7 @@ import { StyleSheet, Text, View, SafeAreaView, ScrollView } from 'react-native';
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={{ color: '#ef7900', fontSize: 20 }}>Korfkaas Ereklasse veldseizoen 2023/2024</Text>
+      <Text style={{ color: '#ef7900', fontSize: 20 }}>Korfbal Ereklasse veldseizoen 2023/2024</Text>
       <View style={{ flexDirection: "row", margin: 0 }}>
         <View>
           <View style={styles.poule}>
