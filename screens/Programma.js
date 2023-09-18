@@ -7,10 +7,10 @@ const Programma = () => {
 <SafeAreaView style={styles.container}>
       <Text style={{ color: '#ef7900', fontSize: 20 }}>Korfbal Ereklasse veldseizoen 2023/2024</Text>
       <View style={{flexDirection: 'row'}}>
-      <Button onPress={() => {alert('kaas')}} title='kaas' color={'orange'} />
+      {/* <Button onPress={() => {alert('kaas')}} title='kaas' color={'orange'} />
       <Button onPress={() => {alert('worst')}} title='worst' color={'pink'} />
 
-      <Button onPress={() => {('kaas')}} title='kaas' color={'orange'} />
+      <Button onPress={() => {('kaas')}} title='kaas' color={'orange'} /> */}
   
       </View>
       <View style={{ flexDirection: "row", margin: 0 }}>

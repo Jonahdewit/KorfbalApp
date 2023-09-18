@@ -9,7 +9,7 @@ const Home = () => {
     
     return (
         <SafeAreaView style={{flex: 1, alignItems: "center"}}>
-            <Text style={{fontSize:20}}>Korfbal</Text>
+            <Text style={styles.home}>Homescreen</Text>
             <Button onPress={() => nav.navigate('Programma')} title="Programma's"/>
             <Button onPress={() => nav.navigate('Uitslagen')} title="Uitslagen"/>
             <Button onPress={() => nav.navigate('Stand')} title="Standen"/>
@@ -35,5 +35,10 @@ const styles = StyleSheet.create({
       height: 150,
       borderWidth: 1,
       borderColor: "black"
+    },
+    home: {
+      alignItems: 'center',
+      justifyContent: 'center',
+      fontSize: 24
     }
   });

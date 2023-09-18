@@ -7,10 +7,6 @@ const Uitslagen = () => {
   let array = [];
   const Data = async () => {
     let uitslagendata = await axios.request('https://api-mijn.korfbal.nl/api/v2/matches/pools/89002/results?dateFrom=2023-08-18&dateTo=2023-09-18'); ;
-    
-    setTimeout(() => {
-    console.log(uitslagendata.data[0]);
-    }, 3000);
 
     uitslagendata.data.map(el => {
       array.push(
@@ -29,6 +25,10 @@ const Uitslagen = () => {
   useEffect(() => {
     Data();
   }, []);
+  setTimeout(() => {
+    console.log(array);
+    console.log(uitslagendata.data[0]);
+  }, 3000);
   return (
         <View style={{ padding: 10 }}>
             {uitslagendata}
